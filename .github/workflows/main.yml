@@ -22,3 +22,7 @@ jobs:
           heroku_email: "bryantt23@gmail.com"
           healthcheck: "https://cdci-bry23.herokuapp.com/health"
           checkstring: "ok"
+      - name: Bump version and push tag
+        uses: anothrNick/github-tag-action@1.33.0
+        env:
+          GITHUB_TOKEN: ${{ secrets..GITHUB_TOKEN }}
