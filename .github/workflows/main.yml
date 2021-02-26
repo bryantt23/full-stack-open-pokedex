@@ -6,7 +6,7 @@ on:
       - master
   pull_request:
     branches: [master]
-    types: [opend, synchronize]
+    types: [opened, synchronize]
 
 jobs:
   build:
